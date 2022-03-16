@@ -1,0 +1,43 @@
+.NavbarItems {
+background-color: white;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+}
+
+a:visited {
+    color: black;
+  }
+
+.NavMenu{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-gap: 150px;
+    list-style: none;
+    text-align: center;
+    width: 70pvw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.mmText1{
+    Display: block;
+    Align-Items: center;
+    Justify-Content: centre;
+    text-align: center;
+    font-size: 62px;
+    font-weight: lighter
+}
+
+  
+.mmText2{
+    Display: block;
+    Align-Items: center;
+    Justify-Content: centre;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: -45px;
+}

@@ -1,0 +1,33 @@
+:root {
+  --container: 50%;
+  --roundness: 7px;
+}
+
+@font-face {
+  font-family: 'PoiretOne';
+  src: url('/src/public/fonts/PoiretOne.ttf');
+  font-style: normal;
+}
+
+body {
+  font-family: 'PoiretOne';
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1550px) {
+  :root {
+    --container: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    --container: 100%;
+  }
+
+  body {
+    background-color: white;
+  }
+}
