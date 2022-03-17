@@ -10,21 +10,28 @@ class Navbar extends Component {
         return(
             <div>
             
-            <div>
-                <h1 className='mmText1'>MI MADRE</h1>
-                <h2 className='mmText2'>WE CREATE, PRESENT, PERFORM...</h2>
-            </div>
+            <motion.div
+            initial={{ scale: 5, paddingTop: 150}}
+            animate={{ scale: 1, paddingTop: 0}}
+            transition={{ delay: 1.5, duration: 1.5}}>
+                <h1 className='mmText1'>
+                MI MADRE
+                </h1>
+
+                <h2 className='mmText2'>
+                WE CREATE, PRESENT, PERFORM...
+                </h2>
+            </motion.div>
             
             <nav className='NavbarItems'>
                 
                 <ul className='NavMenu'>
                     {BarItems.map((item,index) => {
                         return (
-                            <motion.div 
-                            className='LoadMotion'
+                            <motion.div
                             initial={{ opacity: 0}}
                             animate={{ opacity: 1}}
-                            transition={{ delay: 1.5, duration: 1.5}}>
+                            transition={{ delay: 3, duration: 3}}>
                                 
                                 <motion.li key={index}
                                 whileHover={{
@@ -40,11 +47,10 @@ class Navbar extends Component {
                         )
                     })}
 
-                    <motion.div 
-                    className='LoadMotion'
+                    <motion.div
                     initial={{ opacity: 0}}
                     animate={{ opacity: 1}}
-                    transition={{ delay: 1.5, duration: 1.5}}>
+                    transition={{ delay: 3, duration: 3}}>
                     
                     <DarkMode />
 
