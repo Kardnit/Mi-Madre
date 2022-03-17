@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import { BarItems } from "./BarItems"
 import '../styles/Navbar.css'
-import { motion } from "framer-motion"
+import {BarItems} from "./BarItems"
+import {motion} from "framer-motion"
+import {DarkMode} from "../components";
 
 class Navbar extends Component {
     
@@ -36,6 +37,9 @@ class Navbar extends Component {
                             
                         )
                     })}
+
+                    <DarkMode />
+
                 </ul>
 
             </nav>
