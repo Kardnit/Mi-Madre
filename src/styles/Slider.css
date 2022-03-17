@@ -18,8 +18,8 @@
   .toggle-theme {
     position: relative;
     display: inline-block;
-    height: 28px;
-    width: 53px;
+    height: 19px;
+    width: 45px;
   }
   
   .toggle-theme input {
@@ -39,13 +39,13 @@
   
   .slider:before {
     background-color: rgb(255, 255, 255);
-    bottom: 4px;
+    bottom: 2px;
     content: "";
-    height: 20px;
-    left: 4px;
+    height: 15px;
+    left: 2px;
     position: absolute;
     transition: 0.4s;
-    width: 20px;
+    width: 15px;
   }
   
   input:checked + .slider {

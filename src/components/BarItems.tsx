@@ -1,49 +1,49 @@
 export const BarItems = [
     {
         title: 'Home',
-        url: '#',
+        url: `Home`,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Works',
-        url: '#',
+        url: ``,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Products',
-        url: '#',
+        url: ``,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Pattern Designs',
-        url: '#',
+        url: ``,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Inspiration',
-        url: '#',
+        url: ``,
         cName: 'nav-links'
 
     },
 
     {
         title: 'About',
-        url: '#',
+        url: `/About`,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Contact Us',
-        url: '#',
+        url: ``,
         cName: 'nav-links'
 
     },
