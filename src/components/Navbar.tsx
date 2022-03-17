@@ -9,17 +9,19 @@ class Navbar extends Component {
     render() {
         return(
             <div>
-            <span>
+            
+            <div>
                 <h1 className='mmText1'>MI MADRE</h1>
                 <h2 className='mmText2'>WE CREATE, PRESENT, PERFORM...</h2>
-            </span>
+            </div>
             
             <nav className='NavbarItems'>
                 
                 <ul className='NavMenu'>
                     {BarItems.map((item,index) => {
                         return (
-                            <motion.div className='LoadMotion'
+                            <motion.div 
+                            className='LoadMotion'
                             initial={{ opacity: 0}}
                             animate={{ opacity: 1}}
                             transition={{ delay: 1.5, duration: 1.5}}>
@@ -38,7 +40,16 @@ class Navbar extends Component {
                         )
                     })}
 
+                    <motion.div 
+                    className='LoadMotion'
+                    initial={{ opacity: 0}}
+                    animate={{ opacity: 1}}
+                    transition={{ delay: 1.5, duration: 1.5}}>
+                    
                     <DarkMode />
+
+                    </motion.div>
+                  
 
                 </ul>
 
