@@ -8,28 +8,28 @@ export const BarItems = [
 
     {
         title: 'Works',
-        url: ``,
+        url: `Works`,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Products',
-        url: ``,
+        url: `Products`,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Pattern Designs',
-        url: ``,
+        url: `Patterns`,
         cName: 'nav-links'
 
     },
 
     {
         title: 'Inspiration',
-        url: ``,
+        url: `Inspiration`,
         cName: 'nav-links'
 
     },
@@ -43,7 +43,7 @@ export const BarItems = [
 
     {
         title: 'Contact Us',
-        url: ``,
+        url: `Contact`,
         cName: 'nav-links'
 
     },

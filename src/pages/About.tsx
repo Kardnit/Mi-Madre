@@ -39,11 +39,11 @@ export default function About() {
 
       <p>Our objective is to bring a fresh touch to the international trends by mixing up a personal artistic approach with the power of the local.</p>
 
-      <p>Interior Design and Style Consultant. I studied fashion design and interior design.</p>
-
       <h1 className='figen'> Figen Iskender </h1>
       
       <h1> Owner & Designer </h1>
+
+      <p>Interior Design and Style Consultant. I studied fashion design and interior design.</p>
       
       <p>I was born in Germany, lived in Istanbul and Amsterdam for long years. I still come and go between Netherlands and Turkey.</p>
 
