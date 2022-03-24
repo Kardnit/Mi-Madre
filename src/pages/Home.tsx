@@ -23,6 +23,8 @@ export default function Home() {
       transition={{ delay: 0.75, duration: 0.75}}>
       
       <Navbar />
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore sint quod perspiciatis cum modi non temporibus debitis saepe aspernatur dolorum a expedita, molestiae aut laudantium harum excepturi voluptates distinctio.</p>
       
       </motion.div>
     </div>
