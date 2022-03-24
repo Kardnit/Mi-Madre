@@ -2,7 +2,7 @@ import './styles/Index.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import {Intro, Home, Works, Products, Patterns, Inspiration ,About, Contact} from './pages';
+import {Intro, Home, Works, Products, Patterns, Inspiration ,About, Contact, Panel} from './pages';
 
 ReactDOM.render(
     <Router>
@@ -16,6 +16,7 @@ ReactDOM.render(
         <Route path="/Inspiration" element={<Inspiration />}/>
         <Route path="/About" element={<About />}/>
         <Route path="/Contact" element={<Contact />}/>
+        <Route path="/Panel" element={<Panel />}/>
       </Routes>
     </Router>,
     document.getElementById('root')
