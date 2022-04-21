@@ -1,0 +1,1 @@
+export { fetchWorks, fetchWorkById, putWork, postWork, deleteWork } from './Works'

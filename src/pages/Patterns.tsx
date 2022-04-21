@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 export default function Home() {
 
   return (
-    <div>
+    <>
       <div>
         <h1 className='mmText1'>
         MI MADRE
@@ -25,6 +25,6 @@ export default function Home() {
       <Navbar />
       
       </motion.div>
-    </div>
+    </>
   )
 }

@@ -6,7 +6,7 @@ import {motion} from "framer-motion"
 export default function Home() {
 
   return (
-    <div>
+    <>
       <div>
         <h1 className='mmText1'>
         MI MADRE
@@ -27,6 +27,6 @@ export default function Home() {
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore sint quod perspiciatis cum modi non temporibus debitis saepe aspernatur dolorum a expedita, molestiae aut laudantium harum excepturi voluptates distinctio.</p>
       
       </motion.div>
-    </div>
+    </>
   )
 }
