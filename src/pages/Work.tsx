@@ -1,13 +1,12 @@
 import '../styles/Index.css'
-import { useState, useEffect } from 'react'
-import { putWork, fetchWorks, fetchWorkById, deleteWork} from '../api'
+import {useState, useEffect} from 'react'
+import {fetchWorks} from '../api'
 import {Navbar, WorkCard} from '../components'
 import {motion} from "framer-motion"
-import { Works } from '../types'
+import {Works} from '../types'
 
-const AUTHED = false
 
-export default function Home() {
+export default function Work() {
 
   const [works, setWorks] = useState<Works[]>([])
   
@@ -41,7 +40,7 @@ export default function Home() {
               })}
 
           </motion.div></>
-      ):(null)}:
+      ):(null)}
     </>
   )
 }

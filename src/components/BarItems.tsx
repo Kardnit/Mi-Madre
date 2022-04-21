@@ -22,7 +22,7 @@ export const BarItems = [
 
     {
         title: 'Pattern Designs',
-        url: `Patterns`,
+        url: `PatternDesigns`,
         cName: 'nav-links'
 
     },

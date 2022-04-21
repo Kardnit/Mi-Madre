@@ -1,4 +1,4 @@
-.work-card-container {
+.product-card-container {
     display: flex;
     position: relative;
     border-radius: var(--roundness);
@@ -14,14 +14,14 @@
     margin-left: auto;
   }
   
-.work-card {
+.product-card {
     color: white;
     padding: 50px 25px;
     height: 150px;
     font-size: 30px;
   }
   
-.work-card-container:hover {
+.product-card-container:hover {
     box-shadow: 0 -1px 4px 0 rgba(144, 144, 144, 0.08), 0 6px 8px 0 rgba(87, 87, 87, 0.12);
     cursor: pointer;
   }

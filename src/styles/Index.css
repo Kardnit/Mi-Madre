@@ -24,19 +24,3 @@ body {
 a {
   color: var(--link-color);
 }
-
-@media screen and (max-width: 1550px) {
-  :root {
-    --container: 70%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  :root {
-    --container: 100%;
-  }
-
-  body {
-    background-color: white;
-  }
-}
