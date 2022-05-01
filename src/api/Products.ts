@@ -3,14 +3,14 @@ import { Products } from '../types'
 
 export async function fetchProducts(): Promise<Products[]> {
   return await axios
-    .get('https://mimadre.herokuapp.com/product')
+    .get('https://mi-madre-7ps3n.ondigitalocean.app/product')
     .then((res) => res.data)
     .catch(console.log)
 }
 
 export async function fetchProductById(Product: string): Promise<Products> {
   return await axios
-    .get('hhttps://mimadre.herokuapp.com/product/' + Product)
+    .get('https://mi-madre-7ps3n.ondigitalocean.app/product/' + Product)
     .then((res) => res.data)
     .catch(console.log)
 }
@@ -18,7 +18,7 @@ export async function fetchProductById(Product: string): Promise<Products> {
 export async function putProduct(Product: Products) {
   console.log(Product)
   await axios
-    .put('https://mimadre.herokuapp.com/product', Product, {
+    .put('https://mi-madre-7ps3n.ondigitalocean.app/product', Product, {
       headers: { 'Content-Type': 'application/json' },
     })
     .catch(console.log)
@@ -27,12 +27,12 @@ export async function putProduct(Product: Products) {
 export async function postProduct(Product: Products) {
   console.log(Product)
   await axios
-    .post('https://mimadre.herokuapp.com/product', Product, {
+    .post('https://mi-madre-7ps3n.ondigitalocean.app/product', Product, {
       headers: { 'Content-Type': 'application/json' },
     })
     .catch(console.log)
 }
 
 export async function deleteProduct(Product: Products) {
-  await axios.delete('https://mimadre.herokuapp.com/product', { data: Product }).catch(console.log)
+  await axios.delete('https://mi-madre-7ps3n.ondigitalocean.app/product', { data: Product }).catch(console.log)
 }

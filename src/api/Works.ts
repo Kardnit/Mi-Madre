@@ -3,14 +3,14 @@ import { Works } from '../types'
 
 export async function fetchWorks(): Promise<Works[]> {
   return await axios
-    .get('https://mimadre.herokuapp.com/work')
+    .get('https://mi-madre-7ps3n.ondigitalocean.app/work')
     .then((res) => res.data)
     .catch(console.log)
 }
 
 export async function fetchWorkById(Work: string): Promise<Works> {
   return await axios
-    .get('hhttps://mimadre.herokuapp.com/work/' + Work)
+    .get('https://mi-madre-7ps3n.ondigitalocean.app/work/' + Work)
     .then((res) => res.data)
     .catch(console.log)
 }
@@ -18,7 +18,7 @@ export async function fetchWorkById(Work: string): Promise<Works> {
 export async function putWork(Work: Works) {
   console.log(Work)
   await axios
-    .put('https://mimadre.herokuapp.com/work', Work, {
+    .put('https://mi-madre-7ps3n.ondigitalocean.app/work', Work, {
       headers: { 'Content-Type': 'application/json' },
     })
     .catch(console.log)
@@ -27,12 +27,12 @@ export async function putWork(Work: Works) {
 export async function postWork(Work: Works) {
   console.log(Work)
   await axios
-    .post('https://mimadre.herokuapp.com/work', Work, {
+    .post('https://mi-madre-7ps3n.ondigitalocean.app/work', Work, {
       headers: { 'Content-Type': 'application/json' },
     })
     .catch(console.log)
 }
 
 export async function deleteWork(Work: Works) {
-  await axios.delete('https://mimadre.herokuapp.com/work', { data: Work }).catch(console.log)
+  await axios.delete('https://mi-madre-7ps3n.ondigitalocean.app/work', { data: Work }).catch(console.log)
 }

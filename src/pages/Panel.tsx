@@ -1,6 +1,6 @@
-import '../styles/Index.css'
+import '../styles/Panel.css'
 import { useState, useEffect } from 'react'
-import {Navbar} from '../components'
+import {Navbar, WorkTable} from '../components'
 import {motion} from "framer-motion"
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
       transition={{ delay: 0.75, duration: 0.75}}>
       
       <Navbar />
-      
+      <WorkTable/>
       </motion.div>
     </>
   )

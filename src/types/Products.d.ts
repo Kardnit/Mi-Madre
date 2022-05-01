@@ -1,7 +1,7 @@
 export default interface Products {
-    id: string
-    name: string
-    image: string
+    id: string,
+    name: string,
+    image: string,
   
   }
   
