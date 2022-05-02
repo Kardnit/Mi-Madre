@@ -1,6 +1,6 @@
 .NavbarItems {
-height: 80px;
 display: flex;
+width: 100%;
 justify-content: center;
 align-items: center;
 font-size: 1.075rem;
@@ -11,34 +11,11 @@ a:visited {
   }
 
 .NavMenu{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(8, auto);
-    grid-gap: 150px;
+    grid-gap: 9.375%;
     list-style: none;
     text-align: center;
-    width: 70pvw;
-    justify-content: end;
-    margin-right: 2rem;
-}
-
-.mmText1{
-    color: var(--link-color);
-    display: block;
+    width: 75%;
     align-items: center;
-    Justify-Content: center;
-    text-align: center;
-    font-size: 60px;
-    font-weight: lighter;
-}
-
-  
-.mmText2{
-    color: var(--link-color);
-    display: block;
-    align-items: center;
-    Justify-Content: center;
-    text-align: center;
-    font-size: 20px;
-    font-weight: lighter;
-    margin-top: -45px;
 }

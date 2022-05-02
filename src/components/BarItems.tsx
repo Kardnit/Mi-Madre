@@ -47,4 +47,11 @@ export const BarItems = [
         cName: 'nav-links'
 
     },
+
+    {
+        title: 'Login',
+        url: `Login`,
+        cName: 'nav-links'
+
+    },
 ]

@@ -1,15 +1,14 @@
 .work-card-container {
-    display: flex;
+    display: block;
     position: relative;
     border-radius: var(--roundness);
     transition: 0.2s;
     font-weight: 500;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 15%;
     min-width: 10%;
-    margin-top: 15px;
+    margin-top: 1%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -17,8 +16,8 @@
 .work-card {
     color: white;
     padding: 50px 25px;
-    height: 150px;
-    font-size: 30px;
+    height: 50%;
+    font-size:150%;
   }
   
 .work-card-container:hover {

@@ -1,7 +1,7 @@
 import '../styles/Index.css'
 import {useState, useEffect} from 'react'
 import {fetchProducts} from '../api'
-import {Navbar, ProductCard} from '../components'
+import {Navbar, ProductCard, Title} from '../components'
 import {motion} from "framer-motion"
 import {Products} from '../types'
 
@@ -18,15 +18,10 @@ export default function Product() {
     <>
       {products.length != 0 ? (
       
-      <><div>
-          <h1 className='mmText1'>
-            MI MADRE
-          </h1>
+      <>
 
-          <h2 className='mmText2'>
-            WE CREATE, PRESENT, PERFORM...
-          </h2>
-        </div>
+        <Title></Title>
+        
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

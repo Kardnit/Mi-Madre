@@ -1,6 +1,6 @@
 :root {
-  --container: 50%;
-  --roundness: 7px;
+  /* --container: 50%; */
+  --roundness: 7.5%;
   --font-color: rgb(0, 0, 0);
   --background-color: rgb(255, 255, 255);
   --link-color: rgb(0, 0, 0);
@@ -14,7 +14,6 @@
 
 body {
   font-family: 'PoiretOne';
-  margin: 0;
   background-color: white;
   overflow-x: hidden;
   background-color: var(--background-color);

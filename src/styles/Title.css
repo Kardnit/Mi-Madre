@@ -1,0 +1,20 @@
+#line1{
+    /* color: var(--link-color); */
+    display: flex;
+    align-items: center;
+    Justify-Content: center;
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+  
+#line2{
+    color: var(--link-color);
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: lighter;
+    margin-top: -35px;
+}

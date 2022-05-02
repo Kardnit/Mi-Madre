@@ -1,5 +1,5 @@
 export default interface PatternDesigns {
-    id: string,
+    id?: string,
     name: string,
     image: string,
   
