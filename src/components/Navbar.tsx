@@ -9,10 +9,8 @@ class Navbar extends Component {
     render() {
         return(
             <div>
-            
-            <nav className='NavbarItems'>
-                
-                <ul className='NavMenu'>
+            <nav className='NavMenu'>
+                <ul className='NavbarItems'>
                     {BarItems.map((item,index) => {
                         return (
                             <div>
@@ -27,16 +25,10 @@ class Navbar extends Component {
                                 </motion.li>
 
                             </div>
-                            
                         )
                     })}
-
-                    <div>
                     
                     <DarkMode />
-
-                    </div>
-                  
 
                 </ul>
 
