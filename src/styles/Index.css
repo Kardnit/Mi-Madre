@@ -12,7 +12,7 @@ ul {
 
 @font-face {
   font-family: 'PoiretOne';
-  src: url('/src/public/fonts/PoiretOne.ttf');
+  src: url('/public/fonts/PoiretOne.ttf');
   font-style: normal;
 }
 
