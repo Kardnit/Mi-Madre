@@ -1,0 +1,10 @@
+form {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    font-size: x-large;
+    margin: 50px auto;
+    white-space: nowrap;
+    gap: 1em;
+    width: 90%;
+}
