@@ -46,5 +46,11 @@ export const BarItems = [
         url: `Contact`,
         cName: 'nav-links'
 
+    },
+    {
+        title: 'Panel',
+        url: `Panel`,
+        cName: 'nav-links'
+
     }
 ]

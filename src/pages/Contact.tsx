@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import {Navbar, Title} from '../components'
 import {motion} from "framer-motion"
 
-export default function Home() {
+export default function Contact() {
 
   return (
     <>

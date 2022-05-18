@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import {motion} from "framer-motion"
 import '../styles/Navbar.css'
 import {BarItems} from "./BarItems"
-import {DarkMode} from "../components";
+import {DarkMode, LoginButton, LogoutButton} from "../components"
 
-class Navbar extends Component {
-    
+class Navbar extends Component {  
     render() {
+        
         return(
             <div>
             <nav className='NavMenu'>
@@ -28,6 +28,8 @@ class Navbar extends Component {
                         )
                     })}
                     
+                    <LogoutButton/>
+                    <LoginButton />
                     <DarkMode />
 
                 </ul>

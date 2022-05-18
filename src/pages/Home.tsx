@@ -5,7 +5,7 @@ import {Navbar, Title} from '../components'
 import {motion} from "framer-motion"
 
 export default function Home() {
-
+  
   return (
     <>
       <Title></Title>
