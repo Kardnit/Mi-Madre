@@ -5,6 +5,7 @@
   "dependencies": {
     "@auth0/auth0-react": "^1.10.1",
     "@babel/core": "^7.16.0",
+    "@emailjs/browser": "^3.6.2",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.16.2",

@@ -7,3 +7,4 @@ export { default as PatternDesignCard } from "./PatternDesignCard";
 export { default as WorkTable } from "./WorkTable";
 export { default as LoginButton } from "./LoginButton";
 export { default as LogoutButton } from "./LogoutButton";
+export { default as ContactForm } from "./ContactForm";

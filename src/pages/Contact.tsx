@@ -1,10 +1,10 @@
 import '../styles/Index.css'
 import { useState, useEffect } from 'react'
-import {Navbar, Title} from '../components'
+import {ContactForm, Navbar, Title} from '../components'
 import {motion} from "framer-motion"
 
 export default function Contact() {
-
+  
   return (
     <>
       <Title></Title>
@@ -15,6 +15,8 @@ export default function Contact() {
       transition={{ delay: 0.75, duration: 0.75}}>
       
       <Navbar />
+
+      <ContactForm/>
       
       </motion.div>
     </>
