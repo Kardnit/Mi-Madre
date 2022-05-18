@@ -1,0 +1,25 @@
+#line1{
+    /* color: var(--link-color); */
+    display: flex;
+    position: flex;
+    align-items: center;
+    Justify-Content: center;
+    text-align: center;
+    font-size: 350%;
+    font-weight: lighter;
+    margin: auto;
+}
+
+  
+#line2{
+    /* color: var(--link-color); */
+    display: flex;
+    /* position: fixed; */
+    align-items: center;
+    Justify-Content: center;
+    text-align: center;
+    font-size: 115%;
+    font-weight: lighter;
+    /* margin-top: -35px; */
+    margin: auto;
+}

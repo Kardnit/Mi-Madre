@@ -1,0 +1,58 @@
+[data-theme="dark"] {
+    --font-color: rgb(255, 255, 255);
+    --background-color: rgb(0, 0, 0);
+    --link-color: rgb(255, 255, 255);
+  }
+
+.toggle-theme-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+  }
+  
+  .toggle-theme-wrapper span {
+    font-size: 20px;
+  }
+  
+  .toggle-theme {
+    position: relative;
+    display: inline-block;
+    height: 19px;
+    width: 45px;
+  }
+  
+  .toggle-theme input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    cursor: pointer;
+    right: -1%;
+    bottom: 1%;
+    left: -1%;
+    top: 1%;
+    transition: 0.2s;
+  }
+  
+  .slider:before {
+    background-color: rgb(255, 255, 255);
+    bottom: 10%;
+    content: "";
+    height: 80%;
+    left: 5%;
+    position: absolute;
+    transition: 0.4s;
+    width: 35%;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  input:checked + .slider:before {
+    background-color: rgb(0, 0, 0);
+    transform: translateX(26px);
+  }

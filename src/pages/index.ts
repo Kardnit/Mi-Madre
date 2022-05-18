@@ -1,0 +1,9 @@
+export { default as Intro } from "./Intro";
+export { default as Home } from "./Home";
+export { default as Work } from "./Work";
+export { default as Product } from "./Product";
+export { default as PatternDesign } from "./PatternDesign";
+export { default as Inspiration } from "./Inspiration";
+export { default as About } from "./About";
+export { default as Contact } from "./Contact";
+export { default as Panel } from "./Panel";
