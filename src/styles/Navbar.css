@@ -1,26 +1,27 @@
 a:visited {
-    color: var(--link-color);
-  }
-
-.NavMenu{
-  display: flex;
-  width: 70%;
-  justify-content: center;
-  align-items: center;
-  font-size: 100%;
-  /* margin: auto; */
+  color: var(--link-color);
 }
 
 .NavbarItems {
-  display: flex;
-  /* grid-template-columns: repeat(7.5%, 7); */
-  grid-gap: 15%;
-  text-align: center;
-  width: 70%;
-  align-items: center;
-  list-style: none;
-  /* margin-block-start: 15px;
-  margin-block-end: 15px;
-  margin-inline-start: -20px;
-  margin-inline-end: 15px; */
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+  font-size: x-large;
+  margin: 50px auto;
+  white-space: nowrap;
+  gap: 1em;
+  width: 90%;
+}
+
+@media screen and (max-width: 900px) {
+  .NavbarItems {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .NavbarItems {
+    grid-auto-flow: row;
+    text-align: center;
+  }
 }

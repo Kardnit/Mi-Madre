@@ -1,43 +1,31 @@
-import React, { Component } from 'react'
-import {motion} from "framer-motion"
-import '../styles/Navbar.css'
-import {BarItems} from "./BarItems"
-import {DarkMode, LoginButton, LogoutButton} from "../components"
+import React, { Component } from "react";
+import { motion } from "framer-motion";
+import "../styles/Navbar.css";
+import { BarItems } from "./BarItems";
+import { DarkMode, LoginButton, LogoutButton } from "../components";
 
-class Navbar extends Component {  
-    render() {
-        
-        return(
-            <div>
-            <nav className='NavMenu'>
-                <ul className='NavbarItems'>
-                    {BarItems.map((item,index) => {
-                        return (
-                            <div>
-                                
-                                <motion.li key={index}
-                                whileHover={{
-                                    scale: 1.5,
-                                }}>
-                                <a className={item.cName} href={item.url}>
-                                {item.title}
-                                </a>
-                                </motion.li>
+class Navbar extends Component {
+  render() {
+    return (
+      <nav className="NavMenu">
+        <ul className="NavbarItems">
+          {BarItems.map((item, index) => {
+            return (
+              <motion.li key={index} whileHover={{ scale: 1.5 }}>
+                <a className={item.cName} href={item.url}>
+                  &nbsp; {item.title} &nbsp;
+                </a>
+              </motion.li>
+            );
+          })}
 
-                            </div>
-                        )
-                    })}
-                    
-                    <LogoutButton/>
-                    <LoginButton />
-                    <DarkMode />
-
-                </ul>
-
-            </nav>
-            </div>
-        )
-    }
+          <LogoutButton />
+          <LoginButton />
+          <DarkMode />
+        </ul>
+      </nav>
+    );
+  }
 }
 
-export default Navbar
+export default Navbar;
