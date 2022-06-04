@@ -11,7 +11,10 @@ ReactDOM.render(
   <Auth0Provider
     domain ={domain}
     clientId={clientId}
-    redirectUri={window.location.origin}>
+    redirectUri={window.location.origin}
+    audience='https://mi-madre/'
+    scope='openid profile email'
+    >
     <Router>
       <Routes>
       <Route path="/" element={<Intro />}/>
