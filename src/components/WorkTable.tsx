@@ -1,3 +1,4 @@
+import { randomUUID } from "crypto";
 import {
   MouseEventHandler,
   useCallback,
@@ -8,7 +9,7 @@ import {
 import Cookies from "universal-cookie";
 import { fetchWorks, postWork } from "../api";
 import { Works } from "../types";
-// import EditWork from './EditWork'
+import { v4 as uuid } from 'uuid'
 
 export default function WorkTable() {
   const [sortKey, setSortKey] = useState<SortKeys>("id");
@@ -101,7 +102,7 @@ export default function WorkTable() {
   async function createWork() {
     await postWork(
       {
-        id: idInput.current.value,
+        id: uuid(),
         name: nameInput.current.value,
         image: imageInput.current.value,
       },
@@ -133,11 +134,6 @@ export default function WorkTable() {
       </thead>
 
       <tbody>
-        <td className="create-form-inputs">
-          <div className="create-form">Id</div>
-          <input className="create-form-input" ref={idInput} />
-        </td>
-
         <td className="create-form-inputs">
           <div className="create-form">Name</div>
           <input className="create-form-input" ref={nameInput} />
