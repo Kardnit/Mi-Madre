@@ -1,5 +1,4 @@
 :root {
-  /* --container: 50%; */
   --roundness: 7.5%;
   --font-color: rgb(0, 0, 0);
   --background-color: rgb(255, 255, 255);
@@ -18,13 +17,20 @@ ul {
 
 body {
   font-family: 'PoiretOne';
-  background-color: white;
   overflow-x: hidden;
+  background-color: black;
   background-color: var(--background-color);
   color: var(--font-color);
 }
 
+.long-text{
+  color: black;
+  color: var(--link-color);
+  font-size: 20px;
+}
+
 a {
   text-decoration: none;
+  color: black;
   color: var(--link-color);
 }

@@ -8,7 +8,7 @@ const LogoutButton = () => {
 
   return (
     isAuthenticated && (
-    <button onClick={() => {
+    <button className='logoutButton' onClick={() => {
       new Cookies().remove('jwt')
       logout()
     }}>

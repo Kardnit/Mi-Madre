@@ -17,7 +17,7 @@ export default function Home() {
       
       <Navbar />
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore sint quod perspiciatis cum modi non temporibus debitis saepe aspernatur dolorum a expedita, molestiae aut laudantium harum excepturi voluptates distinctio.</p>
+      <p className='long-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolore sint quod perspiciatis cum modi non temporibus debitis saepe aspernatur dolorum a expedita, molestiae aut laudantium harum excepturi voluptates distinctio.</p>
       
       </motion.div>
     </>

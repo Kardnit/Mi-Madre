@@ -1,4 +1,4 @@
-import "../styles/Index.css";
+import '../styles/Index.css'
 import { randomUUID } from "crypto";
 import {
   MouseEventHandler,
@@ -8,25 +8,25 @@ import {
   useState,
 } from "react";
 import Cookies from "universal-cookie";
-import { fetchWorks, postWork } from "../api";
-import { Works } from "../types";
+import { fetchPatternDesigns, postPatternDesign } from "../api";
+import { PatternDesigns} from "../types";
 import { v4 as uuid } from "uuid";
-import { EditWork } from ".";
+import { EditPatternDesign } from '.';
 
-export default function WorkTable() {
+export default function PatternDesignTable() {
   const [sortKey, setSortKey] = useState<SortKeys>("id");
   const [sortOrder, setSortOrder] = useState<SortOrder>("ascn");
-  const [works, setWorks] = useState<Works[]>([]);
+  const [patterndesigns, setPatternDesigns] = useState<PatternDesigns[]>([]);
 
   const cookies = new Cookies();
 
   useEffect(() => {
-    fetchWorks().then((data) => {
-      setWorks([...data]);
+    fetchPatternDesigns().then((data) => {
+        setPatternDesigns([...data]);
     });
   }, []);
 
-  type Data = typeof works;
+  type Data = typeof patterndesigns;
 
   type SortKeys = keyof Data[0];
 
@@ -43,7 +43,7 @@ export default function WorkTable() {
   }) {
     if (!sortKey) return tableData;
 
-    const sortedData = works.sort((a, b) => {
+    const sortedData = patterndesigns.sort((a, b) => {
       return a[sortKey] > b[sortKey] ? 1 : -1;
     });
 
@@ -87,8 +87,8 @@ export default function WorkTable() {
 
   const sortedData = useCallback(
     () =>
-      sortData({ tableData: works, sortKey, reverse: sortOrder === "desc" }),
-    [works, sortKey, sortOrder]
+      sortData({ tableData: patterndesigns, sortKey, reverse: sortOrder === "desc" }),
+    [patterndesigns, sortKey, sortOrder]
   );
 
   function changeSort(key: SortKeys) {
@@ -97,11 +97,12 @@ export default function WorkTable() {
     setSortKey(key);
   }
 
+  let idInput = useRef(null);
   let nameInput = useRef(null);
   let imageInput = useRef(null);
 
-  async function createWork() {
-    await postWork(
+  async function createPatternDesign() {
+    await postPatternDesign(
       {
         id: uuid(),
         name: nameInput.current.value,
@@ -135,10 +136,10 @@ export default function WorkTable() {
       </thead>
 
       <tbody>
-        <td className="create-form-inputs">
+      <td className="create-form-inputs">
           <div className="create-form"></div>
         </td>
-
+        
         <td className="create-form-inputs">
           <div className="create-form">Name</div>
           <input className="create-form-input" ref={nameInput} />
@@ -149,27 +150,17 @@ export default function WorkTable() {
           <input className="create-form-input" ref={imageInput} />
         </td>
 
-        <td className="createButton" onClick={createWork}>
-          Create
-        </td>
+        <td className="createButton" onClick={createPatternDesign}>Create</td>
       </tbody>
 
       <tbody>
-        {sortedData().map((work) => {
+        {sortedData().map((patterndesign) => {
           return (
-            <tr key={work.id}>
-              <td>
-                <p>{work.id}</p>
-              </td>
-              <td>
-                <p>{work.name}</p>
-              </td>
-              <td>
-                <p>{work.image}</p>
-              </td>
-              <td>
-                <EditWork {...work} />
-              </td>
+            <tr key={patterndesign.id}>
+              <td><p>{patterndesign.id}</p></td>
+              <td><p>{patterndesign.name}</p></td>
+              <td><p>{patterndesign.image}</p></td>
+              <td><EditPatternDesign {...patterndesign}/></td>
             </tr>
           );
         })}

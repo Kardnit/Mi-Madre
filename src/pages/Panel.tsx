@@ -1,6 +1,6 @@
 import '../styles/Panel.css'
 import { useState, useEffect } from 'react'
-import {Navbar, Title, WorkTable} from '../components'
+import {Navbar, Title, WorkTable, ProductTable, PatternDesignTable} from '../components'
 import {motion} from "framer-motion"
 import { useAuth0 } from '@auth0/auth0-react';
 import Cookies from 'universal-cookie'
@@ -32,7 +32,12 @@ export default function Panel() {
       transition={{ delay: 0.75, duration: 0.75}}>
       
       <Navbar />
+      <header>Work Table</header>
       <WorkTable/>
+      <header>Product Table</header>
+      <ProductTable/>
+      <header>Pattern Design Table</header>
+      <PatternDesignTable/>
       </motion.div>
     </>
   )

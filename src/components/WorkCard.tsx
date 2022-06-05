@@ -1,4 +1,4 @@
-import '../styles/Card.css'
+import '../styles/WorkCard.css'
 import { Works } from '../types'
 import {motion} from "framer-motion"
 

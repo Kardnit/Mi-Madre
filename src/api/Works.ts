@@ -41,8 +41,12 @@ export async function postWork(Work: Works, token: string) {
 
 export async function deleteWork(Work: Works, token: string) {
   await axios
-    .delete("https://mi-madre-7ps3n.ondigitalocean.app/work", { 
-      data: Work ,
-      headers: { "Content-Type": "application/json", Authorization: "Bearer " + token }})
+    .delete("https://mi-madre-7ps3n.ondigitalocean.app/work", {
+      data: Work,
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + token,
+      },
+    })
     .catch(console.log);
 }
