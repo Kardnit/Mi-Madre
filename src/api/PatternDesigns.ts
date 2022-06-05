@@ -23,10 +23,9 @@ export async function putPatternDesign(
   PatternDesign: PatternDesigns,
   token: string
 ) {
-  console.log(PatternDesign);
   await axios
     .put(
-      "https://mi-madre-7ps3n.ondigitalocean.app/patterndesign",
+      "https://mi-madre-7ps3n.ondigitalocean.app/patterndesign/id/" + PatternDesign.id,
       PatternDesign,
       {
         headers: {
@@ -42,7 +41,6 @@ export async function postPatternDesign(
   PatternDesign: PatternDesigns,
   token: string
 ) {
-  console.log(PatternDesign);
   await axios
     .post(
       "https://mi-madre-7ps3n.ondigitalocean.app/patterndesign",

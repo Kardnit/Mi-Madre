@@ -16,9 +16,9 @@ export async function fetchWorkById(Work: string): Promise<Works> {
 }
 
 export async function putWork(Work: Works, token: string) {
-  console.log(Work);
   await axios
-    .put("https://mi-madre-7ps3n.ondigitalocean.app/work", Work, {
+    .put("https://mi-madre-7ps3n.ondigitalocean.app/work/id/" + Work.id, 
+    Work, {
       headers: {
         "Content-Type": "application/json",
         Authorization: "Bearer " + token,
@@ -28,7 +28,6 @@ export async function putWork(Work: Works, token: string) {
 }
 
 export async function postWork(Work: Works, token: string) {
-  console.log(Work);
   await axios
     .post("https://mi-madre-7ps3n.ondigitalocean.app/work", Work, {
       headers: {

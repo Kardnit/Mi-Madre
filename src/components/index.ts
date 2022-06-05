@@ -12,4 +12,4 @@ export { default as LogoutButton } from "./LogoutButton";
 export { default as ContactForm } from "./ContactForm";
 export { default as EditWork } from "./EditWork";
 export { default as EditProduct } from "./EditProduct";
-export { default as EditPatternDesign } from "./EditProduct";
+export { default as EditPatternDesign } from "./EditPatternDesign";

@@ -16,16 +16,16 @@ export async function fetchProductById(Product: string): Promise<Products> {
 }
 
 export async function putProduct(Product: Products, token: string) {
-  console.log(Product);
   await axios
-    .put("https://mi-madre-7ps3n.ondigitalocean.app/product", Product, {
-      headers: { "Content-Type": "application/json", Authorization: "Bearer " + token},
+    .put("https://mi-madre-7ps3n.ondigitalocean.app/product/id/" + Product.id, 
+    Product, {
+      headers: { "Content-Type": "application/json", 
+      Authorization: "Bearer " + token},
     })
     .catch(console.log);
 }
 
 export async function postProduct(Product: Products, token: string) {
-  console.log(Product);
   await axios
     .post("https://mi-madre-7ps3n.ondigitalocean.app/product", Product, {
       headers: { "Content-Type": "application/json", Authorization: "Bearer " + token },

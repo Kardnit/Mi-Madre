@@ -55,13 +55,13 @@ export default function EditPatternDesign(patterndesign: PatternDesigns) {
 
             <div className="edit-form-btns">
             <div onClick={() => setEditingState(false)}>
-                <button>Cancel</button>
+                <button type='button'>Cancel</button>
               </div>
               <div onClick={updatePatternDesign}>
-                <button>Update</button>
+                <button type='button'>Update</button>
               </div>
               <div onClick={removePatternDesign}>
-                <button>Delete</button>
+                <button type='button'>Delete</button>
               </div>
             </div>
           </div>

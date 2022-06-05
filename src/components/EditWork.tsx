@@ -55,13 +55,13 @@ export default function EditWork(work: Works) {
 
             <div className="edit-form-btns">
             <div onClick={() => setEditingState(false)}>
-                <button>Cancel</button>
+                <button type='button'>Cancel</button>
               </div>
               <div onClick={updateWork}>
-                <button>Update</button>
+                <button type='button'>Update</button>
               </div>
               <div onClick={removeWork}>
-                <button>Delete</button>
+                <button type='button'>Delete</button>
               </div>
             </div>
           </div>

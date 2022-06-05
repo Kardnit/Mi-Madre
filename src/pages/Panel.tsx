@@ -10,15 +10,11 @@ export default function Panel() {
   const {isLoading, isAuthenticated, getAccessTokenWithPopup, getAccessTokenSilently} = useAuth0();
 
   useEffect(() => {
-    getAccessTokenWithPopup().then(console.log)
     getAccessTokenSilently().then((response) => {
-        console.log(response)
         const cookies = new Cookies()
         cookies.set("jwt", response)
     });
   }, []);
-
-  console.log(getAccessTokenSilently());
 
   if(!isAuthenticated && !isLoading){window.location.replace('/Home')}
 
